@@ -79,17 +79,6 @@ export default class AppClass extends React.Component {
           <h3 id="coordinates">{`Coordinates (${this.state.x}, ${this.state.y})`}</h3>
           <h3 id="steps">{`You moved ${this.state.steps} time${this.state.steps === 1 ? "" : "s"}`}</h3>
         </div>
-        {/* <div id="grid">
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square active">B</div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-          <div className="square"></div>
-        </div> */}
          <Grid squares={this.state.squares} activeSquare={this.state.activeSquare} />
         <div className="info">
           <h3 id="message">{this.state.message}</h3>
